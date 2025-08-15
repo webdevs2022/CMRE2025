@@ -1,0 +1,646 @@
+/* Registration Tables Styles */
+.registration-table {
+    width: 100%;
+    margin-bottom: 30px;
+    background: #fff;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.registration-table thead th {
+    background: linear-gradient(to right, #4965AD, #5d78c0);
+    color: #fff;
+    font-weight: 600;
+    padding: 18px 15px;
+    text-align: center;
+    border: none;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.registration-table thead th:last-child {
+    min-width: 110px; /* Increase width for On-Spot column */
+}
+
+.registration-table tbody td {
+    padding: 16px 15px;
+    vertical-align: middle;
+    border: 1px solid #eaeaea;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    transition: all 0.2s ease;
+}
+
+.registration-table tbody tr:hover td {
+    background-color: #f2f6ff;
+}
+
+.registration-table tbody tr:nth-child(odd) {
+    background-color: #f8f9fa;
+}
+
+.registration-table tbody tr:hover {
+    background-color: #f0f4f8;
+}
+
+.registration-table tbody tr td:first-child {
+    font-weight: 500;
+    color: #4965AD;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.includes-table {
+    width: 100%;
+    margin-bottom: 30px;
+    background: #fff;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.includes-table td {
+    padding: 16px 20px;
+    vertical-align: middle;
+    border: 1px solid #eaeaea;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+    transition: all 0.2s ease;
+}
+
+.includes-table td i {
+    margin-right: 12px;
+    color: #4965AD;
+    font-size: 18px;
+    background: rgba(73, 101, 173, 0.1);
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.includes-table tr:nth-child(odd) {
+    background-color: #f8f9fa;
+}
+
+.includes-table tr:hover {
+    background-color: #f0f4f8;
+}
+
+.table-responsive {
+    margin: 15px 0;
+    padding: 0 15px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.registration-card {
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    border-top: 4px solid #4965AD;
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.registration-card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(135deg, rgba(73, 101, 173, 0.05) 0%, rgba(73, 101, 173, 0) 70%);
+    border-radius: 0 0 0 150px;
+    z-index: 0;
+}
+
+.registration-card:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, rgba(73, 101, 173, 0) 30%, rgba(73, 101, 173, 0.05) 100%);
+    border-radius: 0 120px 0 0;
+    z-index: 0;
+}
+
+.registration-card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    transform: translateY(-5px);
+}
+
+.fees-header, .includes-header, .guidelines-header, .policy-header {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.fees-header:after, .includes-header:after, .guidelines-header:after, .policy-header:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(to right, #4965AD, #7389c7);
+    transform: translateX(-50%);
+    border-radius: 3px;
+}
+
+.fees-header h3, .includes-header h3, .guidelines-header h3, .policy-header h3 {
+    color: #4965AD;
+    font-size: 24px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+}
+
+.fees-header h3:before, .includes-header h3:before, .guidelines-header h3:before, .policy-header h3:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 40px;
+    height: 2px;
+    background: #4965AD;
+    transform: translateX(-50%);
+}
+
+.fees-header p {
+    color: #666;
+    font-size: 15px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.includes-header i, .guidelines-header i, .policy-header i {
+    color: #4965AD;
+    font-size: 32px;
+    margin-bottom: 15px;
+    display: block;
+    background: rgba(73, 101, 173, 0.1);
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    text-align: center;
+}
+
+.guidelines-content h4, .policy-content h4 {
+    color: #333;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    background: linear-gradient(to right, #f2f6ff, #f8f9fa);
+    padding: 12px 20px;
+    border-left: 4px solid #4965AD;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+}
+
+.guidelines-list,
+.policy-list {
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+.guidelines-list li,
+.policy-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    line-height: 1.6;
+    font-size: 15px;
+    color: #555;
+}
+
+.guidelines-list li:before,
+.policy-list li:before {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: #4965AD;
+    font-size: 14px;
+}
+
+.policy-content a {
+    color: #4965AD;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-bottom: 1px dashed rgba(73, 101, 173, 0.5);
+}
+
+.policy-content a:hover {
+    color: #5d78c0;
+    border-bottom: 1px solid #5d78c0;
+}
+
+.registration-section {
+    padding: 80px 0;
+    background: linear-gradient(to bottom, #f8f9fa 0%, #ffffff 100%);
+    position: relative;
+}
+
+.registration-section:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background: url('../images/pattern-1.html') center top;
+    opacity: 0.05;
+    background-size: cover;
+}
+
+.sec-title.text-center h2 {
+    margin-bottom: 20px;
+}
+
+.sec-title.text-center .text {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    padding-top: 15px;
+}
+
+.page-title .subtitle {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 991px) {
+    .registration-table thead th {
+        font-size: 14px;
+        padding: 12px 10px;
+    }
+
+    .registration-table tbody td {
+        font-size: 13px;
+        padding: 12px 10px;
+    }
+
+    .registration-table tbody tr td:first-child {
+        padding-left: 15px;
+    }
+
+    .fees-header h3, .includes-header h3, .guidelines-header h3, .policy-header h3 {
+        font-size: 22px;
+    }
+
+    .fees-header p {
+        font-size: 14px;
+    }
+
+    .includes-header i, .guidelines-header i, .policy-header i {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 24px;
+    }
+
+    .registration-card {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    .registration-section {
+        padding: 60px 0;
+    }
+
+    .sec-title.text-center h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .sec-title.text-center .text {
+        font-size: 14px;
+        padding-top: 10px;
+    }
+
+    .table-responsive {
+        padding: 0 10px;
+    }
+
+    .registration-table thead th {
+        font-size: 13px;
+        padding: 10px 8px;
+    }
+
+    .registration-table tbody td {
+        font-size: 12px;
+        padding: 10px 8px;
+    }
+
+    .includes-table td {
+        font-size: 13px;
+        padding: 10px 8px;
+    }
+
+    .includes-table td i {
+        font-size: 14px;
+    }
+
+    .registration-card {
+        padding: 20px;
+    }
+
+    .includes-header i, .guidelines-header i, .policy-header i {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .registration-section {
+        padding: 40px 0;
+    }
+
+    .sec-title.text-center h2 {
+        font-size: 18px;
+    }
+
+    .sec-title.text-center .text {
+        font-size: 13px;
+    }
+
+    .fees-header h3, .includes-header h3, .guidelines-header h3, .policy-header h3 {
+        font-size: 18px;
+    }
+
+    .fees-header p {
+        font-size: 13px;
+    }
+
+    .includes-header i, .guidelines-header i, .policy-header i {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 18px;
+    }
+
+    .registration-card {
+        padding: 15px;
+    }
+
+    .table-responsive {
+        margin: 15px 0;
+    }
+
+    .theme-btn.btn-style-one {
+        padding: 10px 25px;
+    }
+}
+
+/* Registration Guidelines and Cancellation Policy Styles */
+.registration-guidelines,
+.cancellation-policy {
+    margin-bottom: 30px;
+}
+
+.guidelines-header,
+.policy-header {
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #4965AD;
+    padding-bottom: 15px;
+}
+
+.guidelines-header h3,
+.policy-header h3 {
+    color: #4965AD;
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.guidelines-header i,
+.policy-header i {
+    color: #4965AD;
+    font-size: 24px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.guidelines-content h4,
+.policy-content h4 {
+    color: #333;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    background: #f8f9fa;
+    padding: 10px 15px;
+    border-left: 4px solid #4965AD;
+}
+
+.guidelines-list,
+.policy-list {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.guidelines-list li,
+.policy-list li {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    font-size: 15px;
+    color: #555;
+}
+
+.guidelines-list li:before,
+.policy-list li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #4965AD;
+    font-weight: bold;
+}
+
+.policy-content a {
+    color: #4965AD;
+    text-decoration: none;
+}
+
+.policy-content a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+    .guidelines-header h3,
+    .policy-header h3 {
+        font-size: 20px;
+    }
+    
+    .guidelines-header i,
+    .policy-header i {
+        font-size: 22px;
+    }
+    
+    .guidelines-content h4,
+    .policy-content h4 {
+        font-size: 17px;
+    }
+    
+    .guidelines-list li,
+    .policy-list li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    .guidelines-header,
+    .policy-header {
+        margin-bottom: 20px;
+        padding-bottom: 12px;
+    }
+    
+    .guidelines-header h3,
+    .policy-header h3 {
+        font-size: 18px;
+    }
+    
+    .guidelines-header i,
+    .policy-header i {
+        font-size: 20px;
+    }
+    
+    .guidelines-content h4,
+    .policy-content h4 {
+        font-size: 16px;
+        margin-top: 15px;
+        margin-bottom: 12px;
+        padding: 8px 12px;
+    }
+    
+    .guidelines-list li,
+    .policy-list li {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 575px) {
+    .guidelines-header h3,
+    .policy-header h3 {
+        font-size: 17px;
+    }
+    
+    .guidelines-header i,
+    .policy-header i {
+        font-size: 18px;
+    }
+    
+    .guidelines-content h4,
+    .policy-content h4 {
+        font-size: 15px;
+    }
+    
+    .guidelines-list,
+    .policy-list {
+        padding-left: 15px;
+    }
+    
+    .guidelines-list li,
+    .policy-list li {
+        font-size: 12px;
+    }
+}
+
+.btn-box {
+    margin-top: 30px;
+}
+
+.theme-btn.btn-style-one {
+    background: linear-gradient(to right, #4965AD, #5d78c0);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 12px 35px;
+    box-shadow: 0 5px 15px rgba(73, 101, 173, 0.3);
+    transition: all 0.3s ease;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.theme-btn.btn-style-one:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #5d78c0, #4965AD);
+    transition: all 0.5s ease;
+    z-index: -1;
+    opacity: 0;
+}
+
+.theme-btn.btn-style-one:hover {
+    box-shadow: 0 8px 20px rgba(73, 101, 173, 0.4);
+    transform: translateY(-3px);
+}
+
+.theme-btn.btn-style-one:hover:before {
+    opacity: 1;
+}
+
+.theme-btn.btn-style-one .btn-title {
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.theme-btn.btn-style-one:hover .btn-title {
+    transform: translateX(-5px);
+}
+
+.theme-btn.btn-style-one i {
+    margin-left: 5px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.theme-btn.btn-style-one:hover i {
+    transform: translateX(5px);
+}
+
+/* Custom divider between sections */
+.section-divider {
+    height: 1px;
+    background: linear-gradient(to right, rgba(73, 101, 173, 0) 0%, rgba(73, 101, 173, 0.3) 50%, rgba(73, 101, 173, 0) 100%);
+    margin: 30px 0;
+} 

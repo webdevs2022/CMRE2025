@@ -1,0 +1,80 @@
+/* Optimize background images */
+.page-title {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    will-change: transform;
+    contain: paint;
+}
+
+/* Coming soon section optimizations */
+.coming-soon {
+    position: relative;
+    padding: 120px 0px;
+    background-color: #f5f5f5;
+}
+
+.coming-soon .content {
+    position: relative;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.coming-soon .content h2 {
+    position: relative;
+    color: #333333;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin-bottom: 18px;
+}
+
+.coming-soon .content .text {
+    position: relative;
+    color: #777777;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8em;
+    margin-bottom: 35px;
+}
+
+.coming-soon .ahmedabad-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.coming-soon .ahmedabad-image:hover {
+    transform: scale(1.02);
+}
+
+/* Mobile optimizations */
+@media only screen and (max-width: 767px) {
+    .coming-soon {
+        padding: 80px 0px;
+    }
+    
+    .coming-soon .content h2 {
+        font-size: 32px;
+    }
+    
+    .coming-soon .content .text {
+        font-size: 14px;
+    }
+}
+
+/* Image loading optimizations */
+img[loading="lazy"] {
+    transition: opacity 0.3s;
+}
+
+img[loading="lazy"]:not([src]) {
+    opacity: 0;
+}
+
+img[loading="lazy"][src] {
+    opacity: 1;
+} 

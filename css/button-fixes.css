@@ -1,0 +1,773 @@
+/* --- Button Visibility Fixes for Home Page --- */
+/* 1. Ensure .btn-title is always above pseudo-elements */
+.btn-style-one .btn-title,
+.theme-btn .btn-title {
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+/* 2. Make .btn-style-one:before background transparent on hover to avoid covering text */
+.btn-style-one:before {
+  background-color: transparent !important;
+}
+
+.btn-style-one:hover:before {
+  background-color: transparent !important;
+}
+
+/* 3. Remove unnecessary opacity/visibility/color !important overrides for .btn-title on hover */
+.btn-style-one .btn-title,
+.theme-btn .btn-title {
+  opacity: 1;
+  visibility: visible;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.btn-style-one:hover .btn-title,
+.theme-btn:hover .btn-title {
+  color: #fff;
+}
+
+/* 4. Ensure strong color contrast for all main button hovers */
+.theme-btn.btn-style-one:hover,
+.theme-btn.btn-style-two:hover,
+.theme-btn.btn-style-three:hover {
+  background: linear-gradient(
+    90deg,
+    #68eebe 0%,
+    #28cccd 50%,
+    #68eebe 100%
+  ) !important;
+}
+
+.theme-btn.btn-style-one:hover .btn-title,
+.theme-btn.btn-style-two:hover .btn-title,
+.theme-btn.btn-style-three:hover .btn-title {
+  color: #fff !important;
+}
+
+/* 5. Remove any forced transform/animation on .btn-title */
+.btn-title {
+  transform: none !important;
+  animation: none !important;
+}
+
+/* 6. Remove pointer-events from pseudo-elements to avoid blocking text */
+.theme-btn:before,
+.theme-btn:after,
+.btn-style-one:before,
+.btn-style-one:after {
+  pointer-events: none !important;
+}
+
+/* 7. Ensure .btn-title is always visible and not covered */
+.btn-title {
+  display: inline-block !important;
+  z-index: 10 !important;
+}
+
+/* Button hover effect fixes */
+.btn-style-one {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.3s ease;
+  transform: scale(1); /* Explicitly set initial scale */
+}
+
+.btn-style-one:hover {
+  transform: scale(1); /* Prevent scaling on hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow instead of scaling */
+}
+
+.btn-style-one:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: -1;
+  transform: scale(0, 1);
+  transform-origin: top right;
+  transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.btn-style-one:hover:before {
+  transform: scale(1, 1);
+  transform-origin: bottom left;
+}
+
+.btn-style-one .btn-title {
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s ease;
+  transform: translateX(0); /* Initial position */
+}
+
+.btn-style-one:hover .btn-title {
+  color: #6b144b; /* Match the color when hovered */
+  transform: translateX(0); /* Remove the movement effect */
+}
+
+/* Fix specifically for the Welcome Message section button */
+.about-section .btn-box .theme-btn.btn-style-one:hover .btn-title {
+  color: #6b144b;
+  transform: translateX(0); /* Remove the movement effect */
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Global Button Fixes */
+.theme-btn:hover .btn-title {
+  color: #ffffff !important;
+  opacity: 1;
+  visibility: visible;
+}
+
+.theme-btn.btn-style-one:hover {
+  background: #1a237e;
+}
+
+.theme-btn.btn-style-one:hover .btn-title {
+  color: #ffffff !important;
+}
+
+.theme-btn.btn-style-two:hover {
+  background: #1a237e;
+}
+
+.theme-btn.btn-style-two:hover .btn-title {
+  color: #ffffff !important;
+}
+
+.theme-btn.btn-style-three:hover {
+  background: #1a237e;
+}
+
+.theme-btn.btn-style-three:hover .btn-title {
+  color: #ffffff !important;
+}
+
+/* Special case for CTA buttons with inverted colors */
+.booking-cta .theme-btn.btn-style-one:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.booking-cta .theme-btn.btn-style-one:hover .btn-title {
+  color: #1a237e !important;
+}
+
+/* Fix for buttons with darker backgrounds */
+.dark-bg .theme-btn:hover .btn-title {
+  color: #ffffff !important;
+}
+
+/* Fix for buttons on light backgrounds */
+.light-bg .theme-btn:hover .btn-title {
+  color: #ffffff !important;
+}
+
+/* Additional Button Hover Text Fixes */
+
+/* Force visibility for all button text on hover */
+.theme-btn:hover .btn-title,
+.btn-style-one:hover .btn-title,
+.btn-style-two:hover .btn-title,
+.btn-style-three:hover .btn-title {
+  opacity: 1 !important;
+  visibility: visible !important;
+  color: #ffffff !important;
+  transform: translateX(0) !important;
+}
+
+/* Override any transition that might be hiding the text */
+.btn-title {
+  transition: color 0.3s ease !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Fix for white buttons that should have dark text on hover */
+.theme-btn.light-btn:hover .btn-title {
+  color: #1a237e !important;
+}
+
+/* More specific selectors for accommodation page button */
+.accommodation-intro .theme-btn .btn-title,
+.accommodation-intro .theme-btn:hover .btn-title {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Add !important to all button hover styles to override any conflicting styles */
+.theme-btn.btn-style-one:hover {
+  background: #1a237e !important;
+}
+
+.theme-btn.btn-style-one:hover .btn-title {
+  color: #ffffff !important;
+}
+
+/* Extra specificity for the accommodation button */
+.theme-btn.btn-style-one.accommodation-btn:hover {
+  background: #ffffff !important;
+}
+
+.theme-btn.btn-style-one.accommodation-btn:hover .btn-title {
+  color: #1a237e !important;
+}
+
+/* Emergency fixes for button hover text visibility */
+/* These are more aggressive overrides to ensure text visibility */
+
+/* Reset any problematic styles that might be affecting buttons */
+.theme-btn,
+.theme-btn:hover,
+.theme-btn:focus,
+.theme-btn:active {
+  position: relative !important;
+  overflow: visible !important;
+}
+
+/* Force visibility for ALL button text always */
+.theme-btn .btn-title,
+.theme-btn:hover .btn-title,
+.theme-btn:focus .btn-title,
+.theme-btn:active .btn-title,
+.btn-style-one .btn-title,
+.btn-style-one:hover .btn-title,
+.btn-style-two .btn-title,
+.btn-style-two:hover .btn-title,
+.btn-style-three .btn-title,
+.btn-style-three:hover .btn-title {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: inline-block !important;
+  position: relative !important;
+  transform: none !important;
+  z-index: 999 !important;
+}
+
+/* Override any transition or animation effects */
+.btn-title,
+.theme-btn .btn-title {
+  transition: color 0.3s ease !important;
+  animation: none !important;
+  transform: none !important;
+}
+
+/* Color overrides based on button style */
+.theme-btn.btn-style-one:hover .btn-title {
+  color: #ffffff !important;
+}
+
+.theme-btn.btn-style-two:hover .btn-title {
+  color: #ffffff !important;
+}
+
+.theme-btn.btn-style-three:hover .btn-title {
+  color: #ffffff !important;
+}
+
+/* Special accommodation button */
+.accommodation-btn:hover .btn-title {
+  color: #1a237e !important;
+}
+
+/* Remove any :before or :after pseudo-elements that might be blocking text */
+.theme-btn:before,
+.theme-btn:after {
+  pointer-events: none !important;
+  z-index: -1 !important;
+}
+
+/* Fix any z-index issues */
+.theme-btn {
+  z-index: 99 !important;
+}
+
+.theme-btn .btn-title {
+  z-index: 2 !important;
+}
+
+/* Ensure container elements aren't hiding overflow */
+.btn-box {
+  overflow: visible !important;
+}
+
+/* Font properties to ensure visibility */
+.btn-title {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.5px !important;
+  text-transform: none !important;
+}
+
+/* Fixed button style for consistent hover behavior across the site */
+.fixed-btn {
+  display: inline-block;
+  padding: 15px 40px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #68eebe 0%, #28cccd 50%, #68eebe 100%);
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border: 2px solid #298c9d;
+  box-shadow: 0 5px 15px rgba(26, 35, 126, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: visible;
+}
+
+.fixed-btn:hover {
+  background-color: #ffffff;
+  color: #298c9d;
+  box-shadow: 0 8px 20px rgba(26, 126, 104, 0.3);
+  transform: translateY(-3px);
+}
+
+.fixed-btn .btn-content {
+  position: relative;
+  display: inline-block;
+  color: inherit;
+  z-index: 5;
+  transition: color 0.3s ease;
+}
+
+.fixed-btn:hover .btn-content {
+  color: #1a237e;
+}
+
+.fixed-btn .btn-content i {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.fixed-btn:hover .btn-content i {
+  transform: translateX(5px);
+}
+
+/* Ensure button content is always visible */
+.fixed-btn .btn-content,
+.fixed-btn:hover .btn-content,
+.fixed-btn:focus .btn-content,
+.fixed-btn:active .btn-content {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: inline-block !important;
+}
+
+/* Fix for 'View All Registration Details' button (btn-style-three) */
+.theme-btn.btn-style-three,
+.btn-style-three {
+  background: linear-gradient(
+    90deg,
+    #68eebe 0%,
+    #28cccd 50%,
+    #68eebe 100%
+  ) !important;
+  color: #fff !important;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.theme-btn.btn-style-three .btn-title,
+.btn-style-three .btn-title {
+  position: relative;
+  z-index: 2;
+  color: #fff !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transition: color 0.3s;
+}
+
+.theme-btn.btn-style-three:before,
+.btn-style-three:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent !important;
+  z-index: 1;
+  transition: none !important;
+  pointer-events: none !important;
+}
+
+.theme-btn.btn-style-three:hover,
+.btn-style-three:hover {
+  background: #fff !important;
+  color: #6b144b !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.theme-btn.btn-style-three:hover .btn-title,
+.btn-style-three:hover .btn-title {
+  color: #6b144b !important;
+}
+
+.theme-btn.btn-style-three:hover:before,
+.btn-style-three:hover:before {
+  background: transparent !important;
+}
+
+/* Fix for 'Submit Now' button (btn-style-one) on Contact Page */
+.theme-btn.btn-style-one,
+.btn-style-one {
+  background: linear-gradient(
+    90deg,
+    #32aabf 0%,
+    #298c9d 50%,
+    #32aabf 100%
+  ) !important;
+  color: #fff !important;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.theme-btn.btn-style-one .btn-title,
+.btn-style-one .btn-title {
+  position: relative;
+  z-index: 2;
+  color: #fff !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transition: color 0.3s;
+}
+
+.theme-btn.btn-style-one:before,
+.btn-style-one:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent !important;
+  z-index: 1;
+  transition: none !important;
+  pointer-events: none !important;
+}
+
+.theme-btn.btn-style-one:hover,
+.btn-style-one:hover {
+  background: #fff !important;
+  color: #6b144b !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.theme-btn.btn-style-one:hover .btn-title,
+.btn-style-one:hover .btn-title {
+  color: #6b144b !important;
+}
+
+/* --- FINAL FIX: Remove all white background and color conflicts for btn-style-one --- */
+/* Remove any white background from pseudo-elements and ensure hover state is always correct */
+.theme-btn.btn-style-one:before,
+.btn-style-one:before {
+  background: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.theme-btn.btn-style-one:hover:before,
+.btn-style-one:hover:before {
+  background: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Ensure hover state does not override with white background */
+.theme-btn.btn-style-one:hover,
+.btn-style-one:hover {
+  background: #fff !important;
+  color: #6b144b !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.theme-btn.btn-style-one:hover .btn-title,
+.btn-style-one:hover .btn-title {
+  color: #6b144b !important;
+}
+
+/* Remove any conflicting background-color from .btn-style-one:before in style.css via higher specificity */
+.theme-btn.btn-style-one:before,
+.btn-style-one:before {
+  background-color: transparent !important;
+}
+
+/* --- ULTIMATE FIX: Remove all white background for .btn-style-one:before, override style.css, and fix hover --- */
+/* 1. Remove all background and background-color from pseudo-element, highest specificity and target inline style */
+.theme-btn.btn-style-one:before,
+.btn-style-one:before,
+.theme-btn.btn-style-one:hover:before,
+.btn-style-one:hover:before {
+  background: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  z-index: 0 !important;
+  filter: none !important;
+  opacity: 0 !important;
+  content: none !important;
+  display: none !important;
+}
+
+/* 2. Remove transform and transition from pseudo-element to prevent any white flash */
+.theme-btn.btn-style-one:before,
+.btn-style-one:before,
+.theme-btn.btn-style-one:hover:before,
+.btn-style-one:hover:before {
+  transform: none !important;
+  transition: none !important;
+}
+
+/* 3. Ensure button background and text color are correct on hover */
+.theme-btn.btn-style-one,
+.btn-style-one {
+  background: linear-gradient(
+    90deg,
+    #6b144b 0%,
+    #4965ad 50%,
+    #6b144b 100%
+  ) !important;
+  color: #fff !important;
+}
+.theme-btn.btn-style-one:hover,
+.btn-style-one:hover {
+  background: #fff !important;
+  color: #6b144b !important;
+}
+.theme-btn.btn-style-one .btn-title,
+.btn-style-one .btn-title {
+  color: #fff !important;
+}
+.theme-btn.btn-style-one:hover .btn-title,
+.btn-style-one:hover .btn-title {
+  color: #6b144b !important;
+}
+
+/* --- FINAL BUTTON FIX: Ensure text is always visible and readable for .btn-style-one --- */
+.theme-btn.btn-style-one,
+.btn-style-one {
+  background: linear-gradient(
+    90deg,
+    #6b144b 0%,
+    #4965ad 50%,
+    #6b144b 100%
+  ) !important;
+  color: #fff !important;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.theme-btn.btn-style-one .btn-title,
+.btn-style-one .btn-title {
+  color: #fff !important;
+  position: relative;
+  z-index: 10 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: inline-block !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: color 0.3s;
+}
+
+.theme-btn.btn-style-one:hover,
+.btn-style-one:hover {
+  background: #fff !important;
+  color: #6b144b !important;
+}
+
+.theme-btn.btn-style-one:hover .btn-title,
+.btn-style-one:hover .btn-title {
+  color: #6b144b !important;
+  text-shadow: none !important;
+}
+
+/* Hide and disable the :before pseudo-element completely */
+.theme-btn.btn-style-one:before,
+.btn-style-one:before,
+.theme-btn.btn-style-one:hover:before,
+.btn-style-one:hover:before {
+  display: none !important;
+  content: none !important;
+}
+
+/* --- CLEAN, CONFLICT-FREE FIX FOR .btn-style-one BUTTONS --- */
+/* 1. Completely remove and override the :before pseudo-element for .btn-style-one */
+.theme-btn.btn-style-one:before,
+.btn-style-one:before,
+.theme-btn.btn-style-one:hover:before,
+.btn-style-one:hover:before {
+  display: none !important;
+  content: none !important;
+}
+
+/* 2. Ensure button and text color are always visible and not overridden by other rules */
+.theme-btn.btn-style-one,
+.btn-style-one {
+  background: linear-gradient(
+    90deg,
+    #68eebe 0%,
+    #28cccd 50%,
+    #68eebe 100%
+  ) !important;
+  color: #fff !important;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  z-index: 1;
+}
+
+.theme-btn.btn-style-one .btn-title,
+.btn-style-one .btn-title {
+  color: #fff !important;
+  position: relative;
+  z-index: 10 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: inline-block !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: color 0.3s;
+}
+
+.theme-btn.btn-style-one:hover,
+.btn-style-one:hover {
+  background: #fff !important;
+  color: #6b144b !important;
+}
+
+.theme-btn.btn-style-one:hover .btn-title,
+.btn-style-one:hover .btn-title {
+  color: #6b144b !important;
+  text-shadow: none !important;
+}
+
+/* 3. Remove all other .btn-style-one and .btn-title hover color overrides that conflict */
+.theme-btn.btn-style-one:hover .btn-title,
+.btn-style-one:hover .btn-title {
+  color: #6b144b !important;
+}
+
+/* 4. Remove any global .btn-title color overrides on hover for .btn-style-one */
+.theme-btn:hover .btn-title,
+.btn-style-one:hover .btn-title {
+  color: #6b144b !important;
+}
+
+/* --- Modern, Accessible, and Consistent Styling for Contact Page Submit Button --- */
+.theme-btn.submit-btn {
+  background: linear-gradient(90deg, #1a237e 0%, #4965ad 100%) !important;
+  color: #fff !important;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 40px;
+  font-size: 18px;
+  font-weight: 700;
+  box-shadow: 0 4px 16px rgba(26, 35, 126, 0.1);
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
+  position: relative;
+  z-index: 1;
+  outline: none;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+}
+.theme-btn.submit-btn .btn-title {
+  color: #fff !important;
+  position: relative;
+  z-index: 2;
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: inline-block !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: color 0.3s;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.theme-btn.submit-btn:hover,
+.theme-btn.submit-btn:focus {
+  background: #fff !important;
+  color: #1a237e !important;
+  box-shadow: 0 8px 24px rgba(26, 35, 126, 0.18);
+  transform: translateY(-2px) scale(1.03);
+}
+.theme-btn.submit-btn:hover .btn-title,
+.theme-btn.submit-btn:focus .btn-title {
+  color: #1a237e !important;
+  text-shadow: none !important;
+}
+.theme-btn.submit-btn:active {
+  background: #4965ad !important;
+  color: #fff !important;
+  box-shadow: 0 2px 8px rgba(26, 35, 126, 0.1);
+  transform: translateY(1px) scale(0.98);
+}
+
+/* --- FINAL: Strong, Modern Styling for Contact Page Submit Button --- */
+.theme-btn.submit-btn {
+  background: linear-gradient(90deg, #1a237e 0%, #4965ad 100%) !important;
+  color: #fff !important;
+  border: none;
+  border-radius: 8px;
+  padding: 16px 48px;
+  font-size: 20px;
+  font-weight: 700;
+  box-shadow: 0 4px 16px rgba(26, 35, 126, 0.12);
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
+  position: relative;
+  z-index: 1;
+  outline: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+}
+.theme-btn.submit-btn .btn-title {
+  color: #fff !important;
+  position: relative;
+  z-index: 2;
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: inline-block !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: color 0.3s;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.theme-btn.submit-btn:hover,
+.theme-btn.submit-btn:focus {
+  background: #fff !important;
+  color: #1a237e !important;
+  box-shadow: 0 8px 24px rgba(26, 35, 126, 0.18);
+  transform: translateY(-2px) scale(1.04);
+}
+.theme-btn.submit-btn:hover .btn-title,
+.theme-btn.submit-btn:focus .btn-title {
+  color: #1a237e !important;
+  text-shadow: none !important;
+}
+.theme-btn.submit-btn:active {
+  background: #4965ad !important;
+  color: #fff !important;
+  box-shadow: 0 2px 8px rgba(26, 35, 126, 0.1);
+  transform: translateY(1px) scale(0.98);
+}

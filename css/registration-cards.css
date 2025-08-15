@@ -1,0 +1,492 @@
+/* Registration Card Styles */
+.registration-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    height: 100%;
+    border: 1px solid rgba(86, 65, 139, 0.1);
+}
+
+.registration-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(86, 65, 139, 0.25);
+}
+
+.registration-card .card-header {
+    position: relative;
+    padding: 28px 24px 20px;
+    text-align: center;
+    border-radius: 18px 18px 0 0;
+    color: white;
+    background: #56418B;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.registration-card .card-header:before {
+    content: '';
+    position: absolute;
+    top: -80px;
+    right: -50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 1;
+}
+
+.registration-card .card-header:after {
+    content: '';
+    position: absolute;
+    bottom: -60px;
+    left: -30px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    z-index: 1;
+}
+
+.registration-card .card-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 2;
+    letter-spacing: 0.5px;
+}
+
+.registration-card .price-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px;
+    background-color: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    margin-top: 15px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.registration-card .price-column {
+    text-align: center;
+    flex: 1;
+}
+
+.registration-card .price-column:not(:last-child) {
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+}
+
+.registration-card .price-label {
+    font-size: 13px;
+    text-transform: uppercase;
+    opacity: 0.85;
+    margin-bottom: 6px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+}
+
+.registration-card .price {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.registration-card .card-body {
+    padding: 28px 24px;
+    transition: all 0.3s ease;
+}
+
+.registration-card .btn-style-one {
+    background: #56418B;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border: none;
+    box-shadow: 0 5px 15px rgba(86, 65, 139, 0.2);
+}
+
+.registration-card .btn-style-one:after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(35deg);
+    top: -60px;
+    left: -100px;
+    transition: all 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.registration-card .btn-style-one:hover:after {
+    left: 120%;
+}
+
+.registration-card .btn-style-one:hover {
+    background: #4965AE;
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 12px 25px rgba(73, 101, 174, 0.4);
+}
+
+.registration-includes {
+    margin-top: 60px;
+    padding: 40px 30px;
+    background-color: #f8f9ff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(86, 65, 139, 0.06);
+    border: 1px solid rgba(86, 65, 139, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.registration-includes:before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgba(86, 65, 139, 0.08);
+    border-radius: 50%;
+    top: -150px;
+    right: -150px;
+    z-index: 0;
+}
+
+.registration-includes:after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(73, 101, 174, 0.05);
+    border-radius: 50%;
+    bottom: -100px;
+    left: -100px;
+    z-index: 0;
+}
+
+.registration-includes h3 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 35px;
+    color: #56418B;
+    font-weight: 700;
+}
+
+.registration-includes h3:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -12px;
+    width: 70px;
+    height: 4px;
+    background: #56418B;
+    border-radius: 2px;
+}
+
+.include-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 22px;
+    height: 100%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(86, 65, 139, 0.08);
+}
+
+.include-card:hover {
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 0 15px 30px rgba(86, 65, 139, 0.18);
+    border-color: rgba(86, 65, 139, 0.2);
+}
+
+.include-card .icon {
+    width: 54px;
+    height: 54px;
+    min-width: 54px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 18px;
+    font-size: 22px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.include-card:hover .icon {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 8px 20px rgba(86, 65, 139, 0.25);
+}
+
+.include-card .icon:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.include-card .content h5 {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 600;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.include-card:hover .content h5 {
+    color: #56418B;
+}
+
+/* Color Schemes for Registration Cards */
+.clinicians-card .card-header {
+    background: linear-gradient(145deg, #56418B, #4965AE);
+}
+
+.embryologists-card .card-header {
+    background: linear-gradient(145deg, #4965AE, #56418B);
+}
+
+.non-isar-card .card-header {
+    background: linear-gradient(145deg, #56418B, #3A2D5F);
+}
+
+.accompanying-card .card-header {
+    background: linear-gradient(145deg, #4965AE, #364C87);
+}
+
+.students-card .card-header {
+    background: linear-gradient(145deg, #56418B, #56418B 60%, #4965AE);
+}
+
+.foreign-card .card-header {
+    background: linear-gradient(145deg, #4965AE, #4965AE 60%, #56418B);
+}
+
+/* Icons for Includes */
+.lunch-icon {
+    background: #56418B;
+}
+
+.gala-icon {
+    background: #4965AE;
+}
+
+.banquet-icon {
+    background: #56418B;
+}
+
+.certificate-icon {
+    background: #4965AE;
+}
+
+.access-icon {
+    background: #56418B;
+}
+
+.gst-icon {
+    background: linear-gradient(145deg, #56418B, #4965AE);
+}
+
+.gst-icon:before, .gst-icon:after {
+    background: rgba(73, 101, 174, 0.2);
+}
+
+/* Smooth border transitions for include cards */
+.include-card:nth-child(odd) {
+    border-left: 0px solid #56418B;
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1), border-left 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.include-card:nth-child(even) {
+    border-right: 0px solid #4965AE;
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1), border-right 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.include-card:nth-child(odd):hover {
+    border-left: 4px solid #56418B;
+}
+
+.include-card:nth-child(even):hover {
+    border-right: 4px solid #4965AE;
+}
+
+/* Additional Styling for Price Labels */
+.price-label {
+    position: relative;
+}
+
+.price-label:after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: rgba(86, 65, 139, 0.5);
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1px;
+}
+
+/* Highlight Early Bird */
+.price-column:first-child .price {
+    position: relative;
+}
+
+.price-column:first-child .price:after {
+    content: '';
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+    background: rgba(86, 65, 139, 0.2);
+    color: #56418B;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-weight: 600;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.registration-card:hover .price-column:first-child .price:after {
+    opacity: 0;
+    bottom: -22px;
+}
+
+/* Additional Styling for Cards */
+.registration-card:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: #56418B;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+    z-index: 1;
+}
+
+.registration-card:hover:before {
+    transform: scaleX(1);
+}
+
+/* Add ripple effect on hover */
+.registration-card .card-header:hover:before {
+    animation: ripple 1.5s ease-in-out;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(1);
+        opacity: 0.4;
+    }
+    100% {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
+
+/* Registration note hover effect */
+.registration-note {
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.registration-note:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(86, 65, 139, 0.12);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .registration-card .price-container {
+        flex-direction: column;
+    }
+    
+    .registration-card .price-column {
+        padding: 12px 0;
+    }
+    
+    .registration-card .price-column:not(:last-child) {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .include-card {
+        margin-bottom: 15px;
+    }
+}
+
+/* Styling for registration note */
+.registration-note {
+    font-size: 15px;
+    background: #f8f9ff;
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(86, 65, 139, 0.08);
+    border: 1px solid rgba(86, 65, 139, 0.05);
+    color: #555;
+    position: relative;
+}
+
+.note-highlight {
+    color: #56418B;
+    font-weight: 600;
+    position: relative;
+}
+
+.note-highlight:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #4965AE;
+    bottom: -2px;
+    left: 0;
+    border-radius: 2px;
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 768px) {
+    .registration-note {
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+    
+    .registration-card .price-container {
+        flex-direction: column;
+    }
+    
+    .registration-card .price-column {
+        padding: 12px 0;
+    }
+    
+    .registration-card .price-column:not(:last-child) {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .include-card {
+        margin-bottom: 15px;
+    }
+} 

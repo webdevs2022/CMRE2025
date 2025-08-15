@@ -1,0 +1,435 @@
+/* Custom Styles for About CMRE Page */
+
+.about-section {
+  padding: 100px 0 70px;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-section .content-column .inner-column {
+  position: relative;
+  padding-right: 30px;
+}
+
+.about-section .sec-title {
+  margin-bottom: 40px;
+}
+
+.about-section .sec-title .title {
+  display: block;
+  font-size: 16px;
+  line-height: 26px;
+  color: #57428d;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.about-section .sec-title h2 {
+  position: relative;
+  display: block;
+  font-size: 36px;
+  line-height: 1.2em;
+  color: #222222;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+.about-section .sec-title h2:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #4965ad;
+}
+
+.about-section .text {
+  position: relative;
+  font-size: 16px;
+  line-height: 1.8em;
+  color: #555555;
+  margin-bottom: 30px;
+}
+
+.about-section .text p {
+  position: relative;
+  font-size: 16px;
+  line-height: 1.8em;
+  color: #555555;
+  margin-bottom: 20px;
+}
+
+.about-section .about-image {
+  margin: 20px 0 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-section .about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+}
+
+.about-section .about-image:hover img {
+  transform: scale(1.02);
+}
+
+.about-section .signature {
+  margin-top: 30px;
+  font-style: italic;
+  color: #222222;
+}
+
+.about-section .image-column .inner-column {
+  position: relative;
+  padding-left: 30px;
+}
+
+.about-section .image-column .image {
+  position: relative;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Make sure there's no overlay being applied to the image */
+.about-section .image-column .image:before,
+.about-section .image-column .image:after {
+  display: none;
+  content: none;
+}
+
+/* Remove page title overlay */
+.page-title:before,
+.page-title:after {
+  display: none !important;
+  content: none !important;
+  background: none !important;
+}
+
+/* Banner image styling */
+.banner-image {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  z-index: 5;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.banner-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.about-section .image-column .image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: all 500ms ease;
+}
+
+.about-section .image-column .image:hover img {
+  transform: scale(1.05);
+}
+
+.conference-info {
+  position: relative;
+  background-color: #f7f7fa;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.conference-banner {
+  margin-bottom: 25px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.conference-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.conference-banner:hover img {
+  transform: scale(1.03);
+}
+
+.conference-info .info-box {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 30px;
+}
+
+.conference-info .info-box .icon {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  color: #4965ad;
+  font-size: 20px;
+  line-height: 1em;
+}
+
+.conference-info .info-box h4 {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  line-height: 1.2em;
+  color: #222222;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.conference-info .info-box p {
+  position: relative;
+  display: block;
+  font-size: 16px;
+  line-height: 26px;
+  color: #555555;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.conference-info .info-box .theme-btn {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* New custom Register button */
+.register-button {
+  display: block;
+  padding: 12px 25px;
+  background-color: #4965ad;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 5px 15px rgba(73, 101, 173, 0.3);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.register-button:hover {
+  background-color: #57428d;
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(73, 101, 173, 0.5);
+  text-decoration: none;
+}
+
+/* Button styles consistent with main site */
+.conference-info .theme-btn.btn-style-one {
+  position: relative;
+  padding: 10px 30px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 400;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 10px;
+  background: rgb(87, 66, 141);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(87, 66, 141, 1) 0%,
+    rgba(73, 101, 173, 1) 50%,
+    rgba(87, 66, 141, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(87, 66, 141, 1) 0%,
+    rgba(73, 101, 173, 1) 50%,
+    rgba(87, 66, 141, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(87, 66, 141, 1) 0%,
+    rgba(73, 101, 173, 1) 50%,
+    rgba(87, 66, 141, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#57428d",endColorstr="#57428d",GradientType=1);
+  transition: all 0.3s ease;
+}
+
+.conference-info .theme-btn.btn-style-one:hover {
+  background: #333333 !important;
+  color: #ffffff !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 12px 25px rgba(73, 101, 174, 0.4) !important;
+  border: 1px solid #57428d !important;
+  font-weight: 600 !important;
+}
+
+/* Features Section */
+.features-section {
+  position: relative;
+  padding-top: 50px;
+}
+
+.feature-block {
+  position: relative;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.feature-block .inner-box {
+  position: relative;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 300ms ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.feature-block .inner-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.feature-block .icon-box {
+  position: relative;
+  margin-bottom: 20px;
+  height: 160px;
+  width: 160px;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 4px solid #23d59f;
+  background: rgb(87, 66, 141);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(87, 66, 141, 0.1) 0%,
+    rgba(73, 101, 173, 0.1) 50%,
+    rgba(87, 66, 141, 0.1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(87, 66, 141, 0.1) 0%,
+    rgba(73, 101, 173, 0.1) 50%,
+    rgba(87, 66, 141, 0.1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(87, 66, 141, 0.1) 0%,
+    rgba(73, 101, 173, 0.1) 50%,
+    rgba(87, 66, 141, 0.1) 100%
+  );
+}
+
+.feature-block .icon-box .icon {
+  position: relative;
+  display: block;
+  font-size: 40px;
+  line-height: 1em;
+  color: #57428d;
+  transition: all 300ms ease;
+}
+
+/* Specifically ensure handshake icon matches the theme color */
+.feature-block .icon-box .fa-handshake {
+  color: #57428d !important;
+}
+
+.feature-block .inner-box:hover .icon-box .icon {
+  transform: scale(1.1);
+}
+
+.feature-block h4 {
+  position: relative;
+  display: block;
+  font-size: 20px;
+  line-height: 1.2em;
+  color: #222222;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.feature-block .text {
+  position: relative;
+  display: block;
+  font-size: 15px;
+  line-height: 26px;
+  color: #555555;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+/* Animation */
+.wow {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+  .about-section .content-column,
+  .about-section .image-column {
+    width: 100%;
+  }
+
+  .about-section .content-column .inner-column {
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .about-section .image-column .inner-column {
+    padding-left: 0;
+  }
+}
+
+/* Remove all design elements from images */
+.about-section .image-column .image img,
+.page-title,
+img {
+  filter: none !important;
+  -webkit-filter: none !important;
+  -moz-filter: none !important;
+}
+
+/* Override any background or overlay for images */
+.about-section .image-column .image img,
+img[src*="background"],
+img[src*="ahmedabad"] {
+  background: none !important;
+  position: relative !important;
+  opacity: 1 !important;
+  z-index: 1 !important;
+}
+
+/* Ensure top header icons are white */
+.header-contact-info img,
+.header-top .header-contact-info .call img,
+.header-top .header-contact-info .email img {
+  filter: brightness(0) invert(1) !important;
+}
+
+/* Force white icons in top header */
+.header-top img[src*="call.svg"],
+.header-top img[src*="mail.svg"] {
+  filter: brightness(0) invert(1) !important;
+}

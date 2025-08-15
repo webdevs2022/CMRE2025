@@ -1,0 +1,462 @@
+/* Registration Page Critical Fixes - High Specificity */
+
+/* Table Styles */
+.registration-section .registration-table {
+  width: 100% !important;
+  margin-bottom: 30px !important;
+  background: #fff !important;
+  border: none !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05) !important;
+}
+
+.registration-section .registration-table thead th {
+  background: linear-gradient(to right, #6b144b, #9f1e70) !important;
+  color: #fff !important;
+  font-weight: 600 !important;
+  padding: 18px 15px !important;
+  text-align: center !important;
+  border: none !important;
+  font-size: 15px !important;
+  letter-spacing: 0.5px !important;
+}
+
+.registration-section .registration-table tbody td {
+  padding: 16px 15px !important;
+  vertical-align: middle !important;
+  border: 1px solid #eaeaea !important;
+  text-align: center !important;
+  font-size: 14px !important;
+  color: #333 !important;
+  transition: all 0.2s ease !important;
+}
+
+/* Card Styles */
+.registration-section .registration-card {
+  background: #fff !important;
+  padding: 30px !important;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08) !important;
+  border-radius: 10px !important;
+  border-top: 4px solid #6b144b !important;
+  transition: all 0.3s ease !important;
+  margin-bottom: 30px !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+/* Includes Table */
+.registration-section .includes-table {
+  width: 100% !important;
+  margin-bottom: 30px !important;
+  background: #fff !important;
+  border: none !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05) !important;
+}
+
+.registration-section .includes-table td {
+  padding: 16px 20px !important;
+  vertical-align: middle !important;
+  border: 1px solid #eaeaea !important;
+  text-align: left !important;
+  font-size: 14px !important;
+  color: #333 !important;
+  transition: all 0.2s ease !important;
+}
+
+.registration-section .includes-table td i {
+  margin-right: 12px !important;
+  color: #6b144b !important;
+  font-size: 18px !important;
+  background: rgba(73, 101, 173, 0.1) !important;
+  width: 36px !important;
+  height: 36px !important;
+  line-height: 36px !important;
+  text-align: center !important;
+  border-radius: 50% !important;
+}
+
+/* Headers */
+.registration-section .fees-header,
+.registration-section .includes-header,
+.registration-section .guidelines-header,
+.registration-section .policy-header {
+  text-align: center !important;
+  margin-bottom: 30px !important;
+  position: relative !important;
+  padding-bottom: 15px !important;
+}
+
+.registration-section .fees-header:after,
+.registration-section .includes-header:after,
+.registration-section .guidelines-header:after,
+.registration-section .policy-header:after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 50% !important;
+  width: 80px !important;
+  height: 3px !important;
+  background: linear-gradient(to right, #6b144b, #9f1e70) !important;
+  transform: translateX(-50%) !important;
+  border-radius: 3px !important;
+}
+
+.registration-section .fees-header h3,
+.registration-section .includes-header h3,
+.registration-section .guidelines-header h3,
+.registration-section .policy-header h3 {
+  color: #6b144b !important;
+  font-size: 24px !important;
+  margin-bottom: 12px !important;
+  font-weight: 600 !important;
+  position: relative !important;
+  display: inline-block !important;
+}
+
+.registration-section .fees-header i,
+.registration-section .includes-header i,
+.registration-section .guidelines-header i,
+.registration-section .policy-header i {
+  color: #6b144b !important;
+  font-size: 32px !important;
+  margin-bottom: 15px !important;
+  display: block !important;
+  background: rgba(73, 101, 173, 0.1) !important;
+  width: 70px !important;
+  height: 70px !important;
+  line-height: 70px !important;
+  border-radius: 50% !important;
+  margin: 0 auto 15px !important;
+  text-align: center !important;
+}
+
+/* Table Responsive */
+.registration-section .table-responsive {
+  overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  width: 100% !important;
+}
+
+.registration-section .registration-table {
+  width: 100% !important;
+  min-width: 700px !important; /* Ensure table has minimum width for all content */
+  border-collapse: collapse !important;
+}
+
+.registration-section .registration-table th,
+.registration-section .registration-table td {
+  border: 1px solid #eaeaea !important;
+  padding: 12px 15px !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
+/* Desktop and larger screens */
+@media (min-width: 992px) {
+  .registration-section .registration-table {
+    min-width: 100% !important;
+  }
+}
+
+/* Tablet screens */
+@media (max-width: 991px) {
+  .registration-section .registration-table th:first-child,
+  .registration-section .registration-table td:first-child {
+    position: sticky !important;
+    left: 0 !important;
+    z-index: 1 !important;
+    background-color: #fff !important;
+  }
+
+  .registration-section .registration-table thead th:first-child {
+    background: linear-gradient(to right, #6b144b, #9f1e70) !important;
+    z-index: 2 !important;
+  }
+
+  .registration-section .registration-table th,
+  .registration-section .registration-table td {
+    white-space: nowrap !important;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 767px) {
+  .registration-section .registration-card {
+    padding: 15px 10px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .registration-section .registration-table {
+    min-width: 600px !important;
+  }
+
+  .registration-section .registration-table th,
+  .registration-section .registration-table td {
+    padding: 10px 8px !important;
+    font-size: 13px !important;
+  }
+
+  .register-btn-table {
+    padding: 7px 10px !important;
+    font-size: 13px !important;
+    min-width: 110px !important;
+  }
+
+  .registration-section .fees-header h3,
+  .registration-section .includes-header h3,
+  .registration-section .guidelines-header h3,
+  .registration-section .policy-header h3,
+  .registration-section .details-header h3 {
+    font-size: 20px !important;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .registration-section {
+    padding: 80px 0 50px !important;
+  }
+
+  .registration-section .registration-table {
+    min-width: 500px !important;
+  }
+
+  .registration-section .registration-table th,
+  .registration-section .registration-table td {
+    padding: 8px 6px !important;
+    font-size: 12px !important;
+  }
+
+  .register-btn-table {
+    padding: 6px 10px !important;
+    font-size: 12px !important;
+    min-width: 100px !important;
+  }
+
+  /* Force showing horizontal scrollbar on mobile to make it obvious there's more content */
+  .registration-section .table-responsive::-webkit-scrollbar {
+    -webkit-appearance: none;
+    height: 5px;
+  }
+
+  .registration-section .table-responsive::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Section Styling */
+.registration-section {
+  position: relative !important;
+  padding: 120px 0 90px !important;
+  background-color: #f8f9fa !important;
+}
+
+/* Guidelines Lists */
+.registration-section .guidelines-list li,
+.registration-section .policy-list li {
+  position: relative !important;
+  padding-left: 25px !important;
+  margin-bottom: 12px !important;
+  line-height: 1.6 !important;
+  font-size: 15px !important;
+  color: #555 !important;
+  list-style-type: none !important;
+}
+
+.registration-section .guidelines-list li:before,
+.registration-section .policy-list li:before {
+  content: "\f00c" !important;
+  font-family: "Font Awesome 5 Free" !important;
+  font-weight: 900 !important;
+  position: absolute !important;
+  left: 0 !important;
+  color: #61eac0 !important;
+  font-size: 14px !important;
+}
+
+/* Guidelines Content Styling */
+.registration-section .guidelines-content h4,
+.registration-section .policy-content h4 {
+  color: #333 !important;
+  font-size: 18px !important;
+  margin-top: 25px !important;
+  margin-bottom: 15px !important;
+  font-weight: 600 !important;
+  background: linear-gradient(to right, #f2f6ff, #f8f9fa) !important;
+  padding: 12px 20px !important;
+  border-left: 4px solid #61eac0 !important;
+  border-radius: 0 5px 5px 0 !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03) !important;
+}
+
+.registration-section .guidelines-content h4 i,
+.registration-section .policy-content h4 i {
+  margin-right: 8px !important;
+  color: #6b144b !important;
+}
+
+/* Button Styling */
+.registration-section .btn-box .theme-btn.btn-style-one {
+  background: #6b144b !important;
+  position: relative !important;
+  overflow: hidden !important;
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+  border-radius: 30px !important;
+  padding: 12px 30px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.5px !important;
+  border: none !important;
+  box-shadow: 0 5px 15px rgba(86, 65, 139, 0.2) !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+  margin-top: 20px !important;
+}
+
+.registration-section .btn-box .theme-btn.btn-style-one:hover {
+  background: #45082f !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 12px 25px rgba(73, 101, 174, 0.4) !important;
+  color: #fff !important;
+}
+
+/* Fix for register button text color when active/clicked */
+.header-top .register-btn:active,
+.header-top .register-btn:focus,
+.theme-btn.register-btn:active,
+.theme-btn.register-btn:focus {
+  color: #6b144b !important;
+}
+
+/* Fix for registration page buttons when active */
+.registration-section .btn-box .theme-btn:active,
+.registration-section .btn-box .theme-btn:focus {
+  background-color: #fff !important;
+  color: #6b144b !important;
+  outline: none !important;
+}
+
+/* Section Divider */
+.registration-section .section-divider {
+  height: 1px !important;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(73, 101, 173, 0.2),
+    transparent
+  ) !important;
+  margin: 40px 0 !important;
+}
+
+/* Links in policy content */
+.registration-section .policy-content a {
+  color: #6b144b !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+  transition: all 0.3s ease !important;
+  border-bottom: 1px dashed rgba(73, 101, 173, 0.5) !important;
+}
+
+.registration-section .policy-content a:hover {
+  color: #6b144b !important;
+  border-bottom: 1px solid #6b144b !important;
+}
+
+/* Add styles for bank details section */
+.bank-details {
+  margin-bottom: 30px;
+}
+
+.bank-details .details-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bank-details .details-header i {
+  font-size: 40px;
+  color: #6b144b;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.bank-details .details-header h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.bank-details .details-header p {
+  font-size: 16px;
+  color: #666;
+}
+
+.bank-details-table {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.bank-details-table td {
+  padding: 12px 15px;
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+.bank-details-table td:first-child {
+  width: 40%;
+  background-color: #f8f8f8;
+}
+
+.bank-details-table td strong {
+  color: #6b144b;
+}
+
+/* Register Now button in table */
+.register-btn-table {
+  display: inline-block;
+  padding: 8px 15px;
+  background: #6b144b;
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 30px;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(87, 66, 141, 0.2);
+  text-align: center;
+  white-space: nowrap;
+  min-width: 120px;
+  width: 100%;
+  max-width: 160px;
+}
+
+.register-btn-table:hover {
+  background: #6b144b;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(73, 101, 174, 0.3);
+  color: #fff !important;
+}
+
+/* Action column styles */
+.action-column {
+  min-width: 140px !important;
+  text-align: center !important;
+}
+
+.action-cell {
+  text-align: center !important;
+  padding: 10px !important;
+}
+
+/* Category cell styles */
+.category-cell {
+  font-weight: 600 !important;
+  color: #333 !important;
+}

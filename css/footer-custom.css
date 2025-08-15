@@ -1,0 +1,122 @@
+/* Custom Footer Styles - High Specificity Version */
+html body .main-footer .footer-bottom .powered-by-text {
+    position: relative !important;
+    padding: 15px 0 !important;
+    line-height: 20px !important;
+    font-size: 14px !important;
+    color: #ffffff !important;
+    font-weight: 400 !important;
+    text-align: left !important;
+    float: left !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+html body .main-footer .footer-bottom .powered-by-text p {
+    margin: 0 !important;
+    color: #ffffff !important;
+    font-size: 14px !important;
+}
+
+html body .main-footer .footer-bottom .copyright-text {
+    position: relative !important;
+    padding: 15px 0 !important;
+    text-align: right !important;
+    float: right !important;
+    color: #ffffff !important;
+    display: flex !important;
+    align-items: center !important;
+    font-size: 14px !important;
+}
+
+html body .main-footer .footer-bottom .copyright-text p {
+    color: #ffffff !important;
+    margin: 0 !important;
+    font-size: 14px !important;
+}
+
+html body .main-footer .footer-bottom {
+    padding: 0 !important;
+}
+
+html body .main-footer .footer-bottom .inner-container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+
+@media (max-width: 767px) {
+    html body .main-footer .footer-bottom .powered-by-text,
+    html body .main-footer .footer-bottom .copyright-text {
+        float: none !important;
+        text-align: center !important;
+        width: 100% !important;
+        padding: 5px 0 !important;
+        color: #ffffff !important;
+        display: flex !important;
+        justify-content: center !important;
+        font-size: 14px !important;
+    }
+    
+    html body .main-footer .footer-bottom .powered-by-text {
+        margin-bottom: 0 !important;
+    }
+    
+    html body .main-footer .footer-bottom .copyright-text {
+        margin-top: 0 !important;
+    }
+    
+    html body .main-footer .footer-bottom .copyright-text p,
+    html body .main-footer .footer-bottom .powered-by-text p {
+        color: #ffffff !important;
+        margin: 0 !important;
+        font-size: 14px !important;
+        text-align: center !important;
+    }
+    
+    html body .main-footer .footer-bottom .inner-container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+}
+
+/* Custom font sizes for secretariat section - Maximum specificity */
+html body .main-footer .widgets-section .footer-widget.about-widget h4,
+html body .main-footer .about-widget h4.clr-white,
+html body .main-footer .footer-column .about-widget h4.clr-white,
+html body .main-footer h4.clr-white,
+html body .main-footer .footer-column h4.clr-white {
+    font-size: 20px !important;
+    line-height: 1.3 !important;
+    font-weight: 500 !important;
+    margin-bottom: 5px !important;
+}
+
+html body .main-footer .widgets-section .footer-widget.about-widget .text,
+html body .main-footer .about-widget .text.clr-white,
+html body .main-footer .contact-list li .text,
+html body .main-footer .contact-list li .text a,
+html body .main-footer .contact-list li div.text a,
+html body .main-footer .widgets-section ul.contact-list li .text,
+html body .main-footer .widgets-section ul.contact-list li .text a,
+html body .main-footer .footer-column .text.clr-white,
+html body .main-footer .footer-column .contact-list li .text,
+html body .main-footer .footer-column .contact-list li .text a,
+html body .main-footer .footer-column ul.contact-list li .text,
+html body .main-footer .footer-column ul.contact-list li .text a,
+html body .main-footer .footer-column ul.contact-list li div.text a {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+} 
+.clr-white-footer {
+    color: #fdfdfd !important;
+    font-size: 14px !important;
+    margin-bottom: 0 !important ;
+    padding-bottom: 4px;
+    text-align: center !important;
+}
+.clr-white-footer a{
+    color: #ffffff !important;
+    font-size: 14px !important;
+}

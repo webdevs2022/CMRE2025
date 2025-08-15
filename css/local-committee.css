@@ -1,0 +1,196 @@
+/* Local Organization Committee Styles */
+
+/* Committee Section */
+.committee-section {
+    width: 100%;
+    background-color: #f9f9f9; /* Light Background */
+    padding: 50px 0; /* Spacing */
+}
+
+.committee-title {
+    text-align: center;
+    font-size: 48px;
+    line-height: 1.2em;
+    color: #1e1f36;
+    font-weight: 700;
+}
+
+.card-container {
+    display: flex;
+    gap: 2.7rem 1.4rem;
+    justify-content: center;
+    flex-direction: row;
+    margin: 60px 0px 60px 0px;
+    flex-wrap: wrap;
+    padding: 1.2rem;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+/* Card Styling */
+.local-card {
+    width: 100%;
+    max-width: 280px; 
+    background: #4965AD;
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 4px 6px 20px rgba(0, 0, 0, 0.4);
+    position: relative;
+    border-bottom: 3px solid #ffffff;
+    transition: all 0.4s ease-in-out;
+    transform: translateY(0) !important;
+    width: calc(25% - 20px); /* 4 cards per row */
+    min-width: 250px;
+}
+
+.local-profile img {
+    width: 131px;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    transition: border 0.4s ease-in-out;
+}
+
+.local-card h2.delgateName {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.4s ease-in-out;
+    color: white;
+}
+
+.local-card p.designation {
+    color: #ddd;
+    font-size: 14px;
+    margin-bottom: 8px;
+    transition: color 0.4s ease-in-out;
+    font-weight: bold;
+}
+
+/* Hover Effects */
+.local-card:hover {
+    background: white;
+    color: black;
+    box-shadow: 4px 6px 20px rgba(0, 0, 0, 0.2);	
+    border-bottom: 3px solid #57428D; /* Light Mode Border Color */
+}
+
+.local-card:hover h2.delgateName {
+    color: black;
+    transition: color 0.4s ease-in-out;
+}
+
+.local-card:hover p.designation {
+    color: black;
+    transition: color 0.4s ease-in-out;
+}
+
+.local-card:hover .local-profile img {
+    border: 4px solid #57428D; /* Border Changes on Hover */
+}
+
+/* No-photo Cards (for future use) */
+.no-photo-card {
+    background: linear-gradient(145deg, #ffffff, #f7f7f7);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 280px;
+    min-width: 250px;
+    width: calc(25% - 20px);
+}
+
+.no-photo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.no-photo-card h3 {
+    margin: 0 0 10px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.no-photo-card p {
+    margin: 0;
+    color: #4965AD;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Committee Categories (for future use) */
+.committee-category {
+    margin: 40px 0 20px;
+    text-align: center;
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    color: #333;
+    font-weight: 600;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Ribbon Header Styling */
+.ribbon-header {
+    background: #4965AD;
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+    margin: 30px 0 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.ribbon-header h3 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* Responsive Adjustments */
+@media only screen and (max-width: 991px) {
+    .card-container {
+        gap: 2rem 1rem;
+    }
+    
+    .local-card, .no-photo-card {
+        width: calc(33.33% - 20px); /* 3 cards per row */
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .committee-title {
+        font-size: 36px;
+    }
+    
+    .local-card, .no-photo-card {
+        width: calc(50% - 20px); /* 2 cards per row */
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .card-container {
+        gap: 1.5rem 0.5rem;
+    }
+    
+    .local-card, .no-photo-card {
+        width: 100%; /* 1 card per row */
+        max-width: 100%;
+    }
+    
+    .committee-title {
+        font-size: 28px;
+    }
+} 
