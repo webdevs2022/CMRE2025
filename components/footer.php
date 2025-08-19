@@ -22,7 +22,7 @@
                                         180, Jai Apartment, Sec 9 <br />
                                         Rohini, New Delhi - 110085
                                     </div>
-                                    <ul class="contact-list">
+                                    <!-- <ul class="contact-list">
                                         <li>
                                             <span class="icon flaticon-phone"></span>
                                             <div class="text"><a href="tel:+9182000765771"> +91
@@ -34,7 +34,7 @@
                                             <div class="text">
                                                 <a href="<?php echo "mailto:" . EMAIL; ?>"><?php echo EMAIL; ?></a>
                                         </li>
-                                    </ul>
+                                    </ul> -->
                                 </div>
 
                             </div>
@@ -79,7 +79,7 @@
                                         A26 First Floor Tagore Market <br>
                                         Kirti Nagar, New Delhi -110015
                                     </div>
-                                    <ul class="contact-list">
+                                    <!-- <ul class="contact-list">
                                         <li>
                                             <span class="icon flaticon-phone"></span>
                                             <div class="text"><a href="tel:+9182000765771"> +91
@@ -91,7 +91,7 @@
                                             <div class="text">
                                                 <a href="<?php echo "mailto:" . EMAIL; ?>"><?php echo EMAIL; ?></a>
                                         </li>
-                                    </ul>
+                                    </ul> -->
                                 </div>
 
                             </div>
@@ -145,7 +145,7 @@
                                     <ul class="contact-list">
                                         <li>
                                             <span class="icon flaticon-phone"></span>
-                                            <div class="text"><a href="tel:+919099331371">+91 9099331371/50</a>
+                                            <div class="text"><a href="tel:+919099331396">+91 9099331396/50</a>
                                             </div>
                                         </li>
                                         <li>
@@ -171,13 +171,13 @@
                                 <h2 class="widget-title">Useful Links</h2>
                                 <ul class="user-links">
                                     <li><a href="index.php">Home</a></li>
-                                    <li><a href="committee.html">Committee</a></li>
-                                    <li><a href="speakers.html">Speakers</a></li>
-                                    <li><a href="registration.html">Registration</a></li>
-                                    <li><a href="abstract.html">Abstract</a></li>
-                                    <li><a href="schedule.html">Schedule</a></li>
-                                    <li><a href="#">Travel</a></li>
-                                    <li><a href="contact.html">Contact Us</a></li>
+                                    <li><a href="committee.php">Committee</a></li>
+                                    <!-- <li><a href="speakers.html">Speakers</a></li> -->
+                                    <li><a href="registration.php">Registration</a></li>
+                                    <!-- <li><a href="abstract.php">Abstract</a></li> -->
+                                    <li><a href="scientific-program.php">Schedule</a></li>
+                                    <!-- <li><a href="#">Travel</a></li> -->
+                                    <li><a href="contact.php">Contact Us</a></li>
                                 </ul>
                             </div>
                         </div>

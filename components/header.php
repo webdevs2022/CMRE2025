@@ -12,8 +12,8 @@ require_once 'links.php';
 
                 <div class="top-left pull-left">
                     <div class="header-contact-info">
-                        <div class="call"><a href="tel:+918200765771"><img src="images/icons/call.svg" alt=""> +91
-                                8200765771</a></div>
+                        <div class="call"><a href="tel:+919099331396"><img src="images/icons/call.svg" alt=""> +91
+                                9099331396</a></div>
                         <div class="email"><a href="<?php echo "mailto:" . EMAIL; ?>"> <img src="images/icons/mail.svg"
                                     alt=""><?php echo EMAIL; ?></a></li>
                         </div>
@@ -21,13 +21,13 @@ require_once 'links.php';
                 </div>
 
                 <div class="pull-right">
-                    <ul class="social-links">
+                    <!-- <ul class="social-links">
                         <li><a href="<?php echo FACEBOOK; ?>" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="<?php echo TWITTER; ?>" target="_blank"><i class="fab fa-twitter x-icon"></i></a>
                         </li>
                         <li><a href="<?php echo INSTAGRAM; ?>" target="_blank"><i class="fab fa-instagram"></i></a></li>
                         <li><a href="<?php echo LINKEDIN; ?>" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                    </ul>
+                    </ul> -->
                     <a href="registration.php" class="theme-btn register-btn">Registration</a>
                     <!-- <div class="header-logo btn-logo"><img src="images/isar-combine-logo.png" alt=""></div> -->
                 </div>
